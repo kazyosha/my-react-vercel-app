@@ -15,6 +15,7 @@ export const getAllProducts = () => (dispatch) => {
 };
 
 // Action thêm sản phẩm vào giỏ hàng (bất đồng bộ)
+// Không kiểm tra tồn kho
 const addToCartUnsafe = (productId) => ({
     type: types.ADD_TO_CART,
     productId,
