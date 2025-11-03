@@ -34,7 +34,7 @@ const Cart = () => {
                         disabled={products.length === 0}
                         onClick={handleCheckout}
                     >
-                        ✅ Checkout
+                        ✅ Checkout  
                     </button>
                 </div>
             </div>

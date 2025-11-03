@@ -7,7 +7,7 @@ const byId = (state = {}, action) => {
             return {
                 ...state,
                 ...action.products.reduce((obj, product) => {
-                    obj[product.id] = product;
+                    obj[product.id] = product;   
                     return obj;
                 }, {}),
             };
