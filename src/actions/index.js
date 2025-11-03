@@ -30,7 +30,7 @@ export const addToCart = (productId) => (dispatch, getState) => {
 
 // Thunk thanh toán
 export const checkout = (products) => (dispatch, getState) => {
-    dispatch({ type: types.CHECKOUT_REQUEST });
+    dispatch({ type: types.CHECKOUT_REQUEST });    
     shop.buyProducts(products, () => {  
         dispatch({ type: types.CHECKOUT_SUCCESS });
     });
