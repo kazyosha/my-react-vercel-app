@@ -6,8 +6,7 @@ export default combineReducers({ products, cart });
 
 // Lấy danh sách sản phẩm để hiển thị
 export const getVisibleProducts = (state) =>
-    fromProducts.getVisibleProducts(state.products);
-
+    fromProducts.getVisibleProducts(state.products); 
 // Lấy danh sách sản phẩm trong giỏ kèm số lượng
 export const getCartProducts = (state) =>
     fromCart.getAddedIds(state.cart).map((id) => ({

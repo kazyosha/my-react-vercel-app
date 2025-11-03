@@ -11,7 +11,7 @@ const receiveProducts = (products) => ({
 export const getAllProducts = () => (dispatch) => {
     shop.getProducts((products) => {
         dispatch(receiveProducts(products));
-    });
+    }); 
 };
 
 // Action thêm sản phẩm vào giỏ hàng (bất đồng bộ)

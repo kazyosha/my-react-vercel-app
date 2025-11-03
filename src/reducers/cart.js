@@ -54,4 +54,4 @@ export default cart;
 export const getQuantity = (state, id) => state.quantityById[id] || 0;
 
 // Selector lấy danh sách id sản phẩm trong giỏ
-export const getAddedIds = (state) => state.addedIds;
+export const getAddedIds = (state) => state.addedIds; 
